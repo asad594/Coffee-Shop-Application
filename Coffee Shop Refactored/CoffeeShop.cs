@@ -24,6 +24,8 @@ namespace Coffee_Shop_Refactored
             Console.WriteLine("Order processed for " + customerName);
             Console.WriteLine("Total amount to pay: " + total);
             paymentProcessor.ProcessPayment(total);
+            Console.WriteLine("Thank you for visiting, " + customerName + "!");
+            Console.WriteLine();
         }
 
         private double CalculateTotal(bool wantsCoffee, bool wantsSandwich)
