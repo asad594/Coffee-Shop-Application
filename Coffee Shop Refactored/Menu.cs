@@ -32,5 +32,13 @@ namespace Coffee_Shop_Refactored
             this.coffeePrice = coffeePrice;
             this.sandwichPrice = sandwichPrice;
         }
+
+        public void Display()
+        {
+            Console.WriteLine("----- MENU -----");
+            Console.WriteLine("Coffee   : " + coffeePrice);
+            Console.WriteLine("Sandwich : " + sandwichPrice);
+            Console.WriteLine("----------------");
+        }
     }
 }

@@ -14,9 +14,11 @@ namespace Coffee_Shop_Refactored
             PaymentProcessor paymentProcessor = new PaymentProcessor();
             CoffeeShop shop = new CoffeeShop(menu, paymentProcessor);
 
-            shop.ProcessOrder("Ali", true, true);    
-            shop.UpdateMenu(250, 400);               
-            shop.ProcessOrder("Sara", true, false);  
+            menu.Display();
+            shop.ProcessOrder("Ali", true, true);
+            shop.UpdateMenu(250, 400);
+            menu.Display();
+            shop.ProcessOrder("Sara", true, false);
         }
     }
 }
